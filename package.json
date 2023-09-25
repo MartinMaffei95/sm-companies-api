@@ -17,6 +17,8 @@
   "main": "app.js",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon ./src/app.ts "
+    "dev": "nodemon ./src/app.ts ",
+    "build": "tsc && vite build",
+    "start": " npm run build && npm run preview"
   }
 }
