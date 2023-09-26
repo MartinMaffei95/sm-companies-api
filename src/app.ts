@@ -5,7 +5,7 @@ import cron from "node-cron";
 import { router } from "./routes";
 import { fetchDataAndCache } from "./cron/exchanges.task";
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 80;
 
 app.use(cors());
 app.use(express.json());
