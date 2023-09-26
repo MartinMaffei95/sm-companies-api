@@ -1,9 +1,9 @@
 import "dotenv/config";
 import express from "express";
 import cors from "cors";
-import { router } from "../routes";
-import { fetchDataAndCache } from "../cron/exchanges.task";
 import cron from "node-cron";
+import { router } from "./routes";
+import { fetchDataAndCache } from "./cron/exchanges.task";
 const app = express();
 const PORT = 3000; // Puerto en el que se ejecutará tu servidor
 
