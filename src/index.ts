@@ -13,9 +13,9 @@ app.use(express.json());
 app.use(router);
 
 // Configurar un cron job para ejecutar la función cada minuto
-// cron.schedule("* * * * *", () => {
-//   return fetchDataAndCache();
-// });
+cron.schedule("* * * * *", () => {
+  return fetchDataAndCache();
+});
 app.listen(PORT, () => {
   console.log(`Servidor escuchando en el puerto ${PORT}`);
 });
