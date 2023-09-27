@@ -14,11 +14,12 @@
   },
   "name": "sm-api",
   "version": "1.0.0",
-  "main": "app.js",
   "license": "MIT",
+  "main": "index.ts",
   "scripts": {
-    "dev": "nodemon ./src/app.ts",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon ./src/index.ts",
     "build": "tsc",
-    "start": "node ./dist/app.js"
+    "start": "node ./dist/index.js"
   }
 }
